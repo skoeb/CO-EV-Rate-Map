@@ -8,6 +8,7 @@ Created on Wed Oct 17 15:40:53 2018
 
 import geopandas as gpd
 import pandas as pd
+pd.options.mode.chained_assignment = None
 from shapely.geometry import Point
 import matplotlib
 import matplotlib.pyplot as plt
