@@ -113,7 +113,8 @@ class EVPandasAssembler(object):
         self.transmissiongpd = transmissiongpd
     
     def mapper(self):
-        m = folium.Map(location=[39.068305, -105.612593], zoom_start=7, tiles = 'stamentoner')
+        m = folium.Map(location=[39.068305, -105.612593], zoom_start=7, tiles = 'stamentoner',
+                       attr = 'Map created by NREL using 2017 Polk Vehicle Registration Data.')
         folium.TileLayer('openstreetmap').add_to(m)
         
         level1_fg = FeatureGroup(name='Level 1 Chargers', show = False)
